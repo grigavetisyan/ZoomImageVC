@@ -25,5 +25,7 @@ class ViewController: UIViewController {
 extension ViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return imageView
+        print("Hello")
+        
     }
 }
