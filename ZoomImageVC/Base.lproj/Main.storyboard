@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomImageVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="opa-yi-RLy">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shun" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-Uf-hfo">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uf6-Uf-hfo" firstAttribute="trailing" secondItem="TLx-va-Def" secondAttribute="trailing" id="P2Y-IZ-6FI"/>
+                                    <constraint firstItem="Uf6-Uf-hfo" firstAttribute="height" secondItem="iOP-ye-hLp" secondAttribute="height" id="Rhl-AA-3Ok"/>
+                                    <constraint firstItem="Uf6-Uf-hfo" firstAttribute="bottom" secondItem="TLx-va-Def" secondAttribute="bottom" id="T0o-Oh-ZfX"/>
+                                    <constraint firstItem="Uf6-Uf-hfo" firstAttribute="top" secondItem="TLx-va-Def" secondAttribute="top" id="n1e-54-miy"/>
+                                    <constraint firstItem="Uf6-Uf-hfo" firstAttribute="width" secondItem="iOP-ye-hLp" secondAttribute="width" id="oK5-Sl-Ayi"/>
+                                    <constraint firstItem="Uf6-Uf-hfo" firstAttribute="leading" secondItem="TLx-va-Def" secondAttribute="leading" id="yet-h8-bfy"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="TLx-va-Def"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="iOP-ye-hLp"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="opa-yi-RLy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1Qi-Q5-ORE"/>
+                            <constraint firstItem="opa-yi-RLy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1nH-cw-608"/>
+                            <constraint firstItem="opa-yi-RLy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Btf-eG-JYQ"/>
+                            <constraint firstAttribute="bottom" secondItem="opa-yi-RLy" secondAttribute="bottom" id="XgX-CN-6PH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Uf6-Uf-hfo" id="4m3-1I-ZbJ"/>
+                        <outlet property="scrolView" destination="opa-yi-RLy" id="fUv-Ts-Bzp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shun" width="2560" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
